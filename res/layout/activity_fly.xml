@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/DrawerLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/window_background" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include layout="@layout/tool_bar" />
+        <View android:id="@id/view" android:background="@color/secondary_color" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="75.0dip" android:layout_marginBottom="75.0dip" android:layout_centerInParent="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="75.0dip" android:layout_marginRight="25.0dip" android:layout_toLeftOf="@id/view">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/primary_text_color" android:id="@id/activity_fly_quickTipsTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Quick Tips" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="55.0dip">
+                <EditText android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/secondary_color" android:textColorHint="@color/secondary_text_color" android:layout_gravity="center" android:id="@id/activity_fly_newTipEditText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="New Tip" android:inputType="numberDecimal" android:textAlignment="center" />
+                <EditText android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/secondary_color" android:textColorHint="@color/secondary_text_color" android:layout_gravity="center" android:id="@id/activity_fly_newTableEditText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Table #" android:inputType="number" android:textAlignment="center" />
+                <Button android:textColor="@color/secondary_text_color" android:layout_gravity="center" android:id="@id/activity_fly_quickTipSaveButton" android:background="@color/secondary_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="Save" android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="25.0dip" android:layout_marginTop="75.0dip" android:layout_toRightOf="@id/view">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/primary_text_color" android:id="@id/activity_fly_tipShareTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tip Share" android:layout_alignTop="@id/view" android:layout_alignStart="@id/activity_fly_newTipShareEditText" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="100.0dip">
+                <EditText android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/secondary_color" android:textColorHint="@color/secondary_text_color" android:layout_gravity="center" android:id="@id/activity_fly_newTipShareEditText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="New Share" android:inputType="numberDecimal" android:imeOptions="actionDone" android:textAlignment="center" />
+                <Button android:textColor="@color/secondary_text_color" android:layout_gravity="center" android:id="@id/activity_fly_tipShareSaveButton" android:background="@color/secondary_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="Save" android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <include layout="@layout/nav_drawer" />
+</android.support.v4.widget.DrawerLayout>

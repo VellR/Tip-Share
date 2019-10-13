@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nightonke.boommenu.ShadowLayout android:id="@id/shadow_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" app:sl_cornerRadius="@dimen/default_circle_button_corner_2radius" app:sl_shadowRadius="@dimen/default_shadow_radius" app:sl_shadowColor="@color/shadow" app:sl_dx="0.0dip" app:sl_dy="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/frame_layout" android:background="@drawable/circle_button" android:layout_width="@dimen/default_circle_button_corner_2radius" android:layout_height="@dimen/default_circle_button_corner_2radius">
+        <ImageButton android:layout_gravity="center" android:id="@id/image_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <View android:id="@id/ripple" android:background="@color/transparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center" android:id="@id/image_view" android:background="@drawable/circle_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/default_circle_button_text_size" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.5dip" android:maxLines="1" />
+    </FrameLayout>
+</com.nightonke.boommenu.ShadowLayout>

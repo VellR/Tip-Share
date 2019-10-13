@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="30.0sp" android:textColor="@color/primary_text_color" android:id="@id/rowText" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/rowDivider" android:background="@color/secondary_color" android:layout_width="200.0dip" android:layout_height="1.0dip" />
+</LinearLayout>

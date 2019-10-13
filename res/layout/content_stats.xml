@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/DrawerLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/window_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.nightonke.boommenu.BoomMenuButton android:id="@id/barCharts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" app:boom_inActionBar="false" app:boom_button_color="@color/primary_text_color" app:boom_button_pressed_color="@color/secondary_text_color" />
+        <FrameLayout android:id="@id/activity_stats_framelayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/barCharts" />
+        <include layout="@layout/tool_bar" />
+    </RelativeLayout>
+    <include layout="@layout/nav_drawer" />
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="40.0px" android:textColor="#fff77008" android:id="@id/sunTextView" android:padding="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Sun" />
+    <TextView android:textSize="40.0px" android:textColor="#fff77008" android:id="@id/monTextView" android:padding="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Mon" />
+    <TextView android:textSize="40.0px" android:textColor="#fff77008" android:id="@id/tuesTextView" android:padding="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Tues" />
+    <TextView android:textSize="40.0px" android:textColor="#fff77008" android:id="@id/wedTextView" android:padding="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Wed" />
+    <TextView android:textSize="40.0px" android:textColor="#fff77008" android:id="@id/thursTextView" android:padding="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Thurs" />
+    <TextView android:textSize="40.0px" android:textColor="#fff77008" android:id="@id/friTextView" android:padding="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Fri" />
+    <TextView android:textSize="40.0px" android:textColor="#fff77008" android:id="@id/satTextView" android:padding="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Sat" />
+</LinearLayout>
