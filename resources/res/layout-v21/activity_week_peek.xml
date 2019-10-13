@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/DrawerLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="7dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/window_background" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include layout="@layout/tool_bar"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/week_peek_focusLayout" android:layout_width="match_parent" android:layout_height="175dp" android:layout_margin="5dp">
+                <TextView android:textSize="30sp" android:textColor="@color/primary_text_color" android:layout_gravity="center_horizontal" android:id="@+id/week_peek_focusDay" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Week"/>
+                <RelativeLayout android:id="@+id/week_peek_rightLayout" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/week_peek_actualLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/week_peek_actual_projected_div">
+                        <TextView android:textSize="20sp" android:textColor="@color/secondary_text_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="actual"/>
+                        <TextView android:textColor="@color/secondary_text_color" android:layout_gravity="right" android:id="@+id/week_peek_actual_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:text="~"/>
+                        <TextView android:textSize="10sp" android:textColor="@color/secondary_text_color" android:layout_gravity="right" android:id="@+id/week_peek_actual_tables" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:text="~"/>
+                        <TextView android:textSize="10sp" android:textColor="@color/secondary_text_color" android:layout_gravity="right" android:id="@+id/week_peek_actual_times" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:text="~"/>
+                    </LinearLayout>
+                    <View android:orientation="vertical" android:id="@+id/week_peek_actual_projected_div" android:background="@color/secondary_color" android:layout_width="1dp" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/week_peek_projectedLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toRightOf="@+id/week_peek_actual_projected_div">
+                        <TextView android:textSize="20sp" android:textColor="@color/secondary_text_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="estimated"/>
+                        <TextView android:textColor="@color/secondary_text_color" android:layout_gravity="left" android:id="@+id/week_peek_projected_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="~"/>
+                        <TextView android:textSize="10sp" android:textColor="@color/secondary_text_color" android:layout_gravity="left" android:id="@+id/week_peek_projected_tables" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:text="~"/>
+                        <TextView android:textSize="10sp" android:textColor="@color/secondary_text_color" android:layout_gravity="left" android:id="@+id/week_peek_projected_times" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:text="~"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:orientation="vertical" android:background="@color/secondary_color" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="1dp" android:layout_centerInParent="true"/>
+            <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp">
+                <RelativeLayout android:id="@+id/week_peek_sunday" android:background="@color/primary_color" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_margin="3dp">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                        <TextView android:textSize="25sp" android:textColor="@color/primary_text_color" android:layout_gravity="start" android:id="@+id/day_item_sunday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Sunday"/>
+                    </LinearLayout>
+                    <View android:background="@color/secondary_color" android:layout_width="1dp" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                        <TextView android:textSize="20sp" android:textColor="@color/secondary_text_color" android:id="@+id/day_item_tip_sunday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="~" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/week_peek_monday" android:background="@color/primary_color" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_margin="3dp">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                        <TextView android:textSize="25sp" android:textColor="@color/primary_text_color" android:layout_gravity="start" android:id="@+id/day_item_monday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Monday"/>
+                    </LinearLayout>
+                    <View android:background="@color/secondary_color" android:layout_width="1dp" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                        <TextView android:textSize="20sp" android:textColor="@color/secondary_text_color" android:id="@+id/day_item_tip_monday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="~" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/week_peek_tuesday" android:background="@color/primary_color" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_margin="3dp">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                        <TextView android:textSize="25sp" android:textColor="@color/primary_text_color" android:layout_gravity="start" android:id="@+id/day_item_tuesday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Tuesday"/>
+                    </LinearLayout>
+                    <View android:background="@color/secondary_color" android:layout_width="1dp" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                        <TextView android:textSize="20sp" android:textColor="@color/secondary_text_color" android:id="@+id/day_item_tip_tuesday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="~" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/week_peek_wednesday" android:background="@color/primary_color" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_margin="3dp">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                        <TextView android:textSize="25sp" android:textColor="@color/primary_text_color" android:layout_gravity="start" android:id="@+id/day_item_wednesday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Wednesday"/>
+                    </LinearLayout>
+                    <View android:background="@color/secondary_color" android:layout_width="1dp" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                        <TextView android:textSize="20sp" android:textColor="@color/secondary_text_color" android:id="@+id/day_item_tip_wednesday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="~" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/week_peek_thursday" android:background="@color/primary_color" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_margin="3dp">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                        <TextView android:textSize="25sp" android:textColor="@color/primary_text_color" android:layout_gravity="start" android:id="@+id/day_item_thursday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Thursday"/>
+                    </LinearLayout>
+                    <View android:background="@color/secondary_color" android:layout_width="1dp" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                        <TextView android:textSize="20sp" android:textColor="@color/secondary_text_color" android:id="@+id/day_item_tip_thursday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="~" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/week_peek_friday" android:background="@color/primary_color" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_margin="3dp">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                        <TextView android:textSize="25sp" android:textColor="@color/primary_text_color" android:layout_gravity="start" android:id="@+id/day_item_friday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Friday"/>
+                    </LinearLayout>
+                    <View android:background="@color/secondary_color" android:layout_width="1dp" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                        <TextView android:textSize="20sp" android:textColor="@color/secondary_text_color" android:id="@+id/day_item_tip_friday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="~" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/week_peek_saturday" android:background="@color/primary_color" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_margin="3dp">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                        <TextView android:textSize="25sp" android:textColor="@color/primary_text_color" android:layout_gravity="start" android:id="@+id/day_item_saturday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Saturday"/>
+                    </LinearLayout>
+                    <View android:background="@color/secondary_color" android:layout_width="1dp" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                        <TextView android:textSize="20sp" android:textColor="@color/secondary_text_color" android:id="@+id/day_item_tip_saturday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="~" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <com.victor.loading.rotate.RotateLoading android:id="@+id/loadingRotate" android:layout_width="100dp" android:layout_height="100dp" android:layout_centerInParent="true" app:loading_color="@color/primary_text_color"/>
+    </RelativeLayout>
+    <include layout="@layout/nav_drawer"/>
+</android.support.v4.widget.DrawerLayout>
